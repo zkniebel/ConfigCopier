@@ -1,0 +1,92 @@
+# ConfigCopier v1.0
+by Zachary Kniebel
+
+
+
+## Description
+
+
+ConfigCopier is a simple console application for recursively copying a 
+.NET website's configuration files. It maintains the folder structure 
+in which the config files are stored, so the backups can be simply 
+merged into a new instance of the same project. 
+
+
+## Features
+
+
+- Ability to specify output directory, source directory, or neither
+- Duplicates folder structure in which config files are currently 
+  stored
+- Will also copy disabled config files (e.g. "xxxxx.config.example" or 
+  "xxxxx.config.disabled")
+
+
+
+## Execution
+
+
+### Default Settings:
+
+- The location of executable will be used as source directory to search 
+  for and copy config files from
+- The output directory will be generated inside the source directory, 
+  with the name "[source directory name]_configs"
+
+  Note: The output directory will be uniquely named, i.e. no 
+  directories will be overwritten
+
+  
+### Double-Click Execution:
+
+Running the executable via double-click, i.e. not from the command 
+prompt, will run ConfigCopier with the default settings.
+
+
+### Command Line Execution:
+
+The following are the valid syntaxes for calling ConfigCopier from the 
+command prompt:
+
+  > ConfigCopier
+  
+  > ConfigCopier.exe       
+  
+  > ConfigCopier [output directory path] 
+   
+  > ConfigCopier.exe [output directory path]  
+  
+  > ConfigCopier [output directory path] [source directory path] 
+  
+  > ConfigCopier.exe [output directory path] [source directory path]
+  
+  Note: If an output path is specified and a directory at that 
+  location already exists, it will be overwritten. This only occurs if
+  an output path was EXPLICITELY SPECIFIED
+
+-----------------------------------------------------------------------
+
+This software is protected under the MIT license, below, and under the 
+Open Source GPL v3.0 license (http://opensource.org/licenses/GPL-3.0).
+
+
+Copyright (C) 2013 Zachary Kniebel
+
+Permission is hereby granted, free of charge, to any person obtaining a 
+copy of this software and associated documentation files (the 
+"Software"), to deal in the Software without restriction, including 
+without limitationthe rights to use, copy, modify, merge, publish, 
+distribute, sublicense, and/or sell copies of the Software, and to 
+permit persons to whom the Software is furnished to do so, subject to 
+the following conditions:
+
+The above copyright notice and this permission notice shall be included 
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS 
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY 
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

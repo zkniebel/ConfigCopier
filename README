@@ -31,7 +31,8 @@ merged into a new instance of the same project.
 - The location of executable will be used as source directory to search 
   for and copy config files from
 - The output directory will be generated inside the source directory, 
-  with the name "[source directory name]_configs"
+  with the name:
+  > "[source directory name]_configs"
 
   Note: The output directory will be uniquely named, i.e. no 
   directories will be overwritten
